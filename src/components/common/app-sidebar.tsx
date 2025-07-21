@@ -48,11 +48,13 @@ const initialData = {
           url: "users",
           icon: UsersRound,
         },
+       
         {
-          name: "Clubs",
-          url: "clubs",
+          name: "States",
+          url: "states",
           icon: UsersRound,
         }, 
+
       ],
     },
  
