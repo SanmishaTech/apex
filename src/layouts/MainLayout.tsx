@@ -1,13 +1,10 @@
-
-
-
-
 import { Outlet } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 // import { AppNavbar } from "@/components/common/app-navbar";
 import { AppSidebar } from "@/components/common/app-sidebar";
 import { SidebarProvider, SidebarInset } from "@/components/ui/sidebar";
+import GlobalSearch from "@/components/GlobalSearch";
 
 
 
@@ -56,11 +53,20 @@ export default function MainLayout() {
     <SidebarProvider>
       <AppSidebar />
       <SidebarInset>
-        {/* <AppNavbar userData={userData} isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} /> */}
+        {/* Top Header Bar with Global Search */}
+        <div className="bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-700 p-4">
+          <div className="flex items-center justify-between">
+            <h1 className="text-lg font-semibold text-gray-900 dark:text-white">
+              Club Management System
+            </h1>
+            <div className="flex items-center space-x-4">
+              <GlobalSearch />
+            </div>
+          </div>
+        </div>
         
         {/* Content Area */}
-        <main className="p-4 pt-9">
-          {/* Add padding to prevent content from being hidden */}
+        <main className="p-4">
           <Outlet />
         </main>
       </SidebarInset>
