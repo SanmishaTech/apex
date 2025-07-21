@@ -44,21 +44,15 @@ const initialData = {
     admin: {
       projects: [
         {
-          name: "Club",
+          name: "Users",
+          url: "users",
+          icon: UsersRound,
+        },
+        {
+          name: "Clubs",
           url: "clubs",
           icon: UsersRound,
-        },
-        {
-          name: "Group",
-          url: "groups",
-          icon: UsersRound,
-        },
-        {
-          name: "Competition",
-          url: "competitions",
-          icon: UsersRound,
-        },
-      
+        }, 
       ],
     },
     clubadmin: {

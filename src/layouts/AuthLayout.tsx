@@ -56,7 +56,7 @@ const AuthLayout = () => {
 								Welcome to {appName}
 							</h2>
 							<p className='text-lg text-white/90 leading-relaxed'>
-								Manage your kabaddi teams, players, and tournaments with our comprehensive sport management platform.
+								Manage your construction projects, teams, and workflows with our comprehensive project management platform.
 							</p>
 						</div>
 					</div>
