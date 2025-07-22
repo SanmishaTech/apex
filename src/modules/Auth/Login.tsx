@@ -93,13 +93,7 @@ const Login = () => {
       localStorage.setItem("authToken", data.token);
       localStorage.setItem("refreshToken", data.accesstoken);
       localStorage.setItem("user", JSON.stringify(data.user));
-      
-      // Store memberId from the nested structure if it exists
-      if (data.user.member && data.user.member.id) {
-        localStorage.setItem("memberId", data.user.member.id.toString());
-      }
-      
-      navigate("/clubs");
+      navigate("/users");
       toast.success("Login successful!");
     },
     onError: (error: ApiErrorResponse) => {
